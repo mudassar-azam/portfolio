@@ -1,8 +1,4 @@
-/**
-* PHP Email Form Validation - v3.9
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
+
 (function () {
   "use strict";
 
@@ -64,7 +60,7 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.trim().toUpperCase() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
